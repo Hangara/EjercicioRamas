@@ -1,0 +1,16 @@
+def calcular_total(precio: float, cantidad: int) -> float:
+    """Calcula el total base de una compra."""
+    subtotal = precio * cantidad
+    return subtotal
+
+
+def main():
+    print("=== Sistema de Cobro ===")
+    precio = 100.0
+    cantidad = 2
+    total = calcular_total(precio, cantidad)
+    print(f"Total a pagar: ${total:.2f}")
+
+
+if __name__ == "__main__":
+    main()
